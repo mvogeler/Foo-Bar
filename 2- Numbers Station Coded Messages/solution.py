@@ -3,9 +3,7 @@ def solution(l, t):
         for j in range(i):
             total = sum(l[j: i])
             if total == t:
-                return [j, i -1]
+                return [j, i - 1]
             elif total > t:
                 continue
     return [-1, -1]
-
-
